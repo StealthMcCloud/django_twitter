@@ -1,6 +1,5 @@
-
 from django.db import models
-from twango.twitteruser.models import TwitterUser
+from twitterclone.twitteruser.models import TwitterUser
 from django.utils import timezone
 
 

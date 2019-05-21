@@ -4,7 +4,7 @@ from twitterclone.twitteruser.forms import SignupForm
 from django.contrib.auth import login
 from django.contrib.auth.models import User
 from twitterclone.twitteruser.models import TwitterUser
-from twitterclone.tweets.models import Tweets
+from twitterclone.tweet.models import Tweet
 
 
 def signup_view(request):
