@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en" class="d-flex h-100 align-items-center">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Login</title>
+    </head>
+    <body>
+        {% if user.is_authenticated %}
+        {% include "navbar.html" %}
+        {% endif %}
+        <!-- can be attribute in view -->
+        <!-- <h1>{{ header }}</h1> -->
+        <h1>Notifications</h1>
+        {% if was_viewed is True or not notifications %}
+        <p>no new notifications</p>
+        {% else %}
+        {{ form.as_p }}
+        {% endif %}
+    </body>
+</html>
